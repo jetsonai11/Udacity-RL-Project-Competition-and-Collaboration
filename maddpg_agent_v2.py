@@ -23,7 +23,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Agent():
     
-    """Meta-Agent containing 2 agents that interact with each other in the environment"""
+    """A DDPG agent class that can be initialized based on the number of agents to solve a multi-agent RL environment """
 
     def __init__(self, state_size, action_size, random_seed):
         """Initialize a maddpg_agent wrapper.
